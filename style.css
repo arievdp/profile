@@ -1,0 +1,118 @@
+/* Colors and fonts */
+body {
+  background: #e35f5f;
+  color: #dfe300;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 300
+  font-size: 14px;
+  line-height: 10px;
+}
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+h1 {
+  color: #dfe300;
+  font-size: 30px;
+  font-weight: 900;
+}
+h2 {
+  color: #dfe300;
+  font-size: 20px;
+  font-weight: 500;
+}
+a {
+  font-family: 'Orbitron', sans-serif;
+  color: #208c71;
+  font-size: 14px;
+  font-weight: 500;
+}
+a:hover {
+  color: pink;
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.img-squarish {
+    transform: rotate(32.5deg);
+    padding: 25px;
+    border-radius: 30%;
+}
+
+.text-center {
+  text-align: center;
+}
+.card-blue {
+  background: #394dcd;
+  padding: 40px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  margin: 20px 0px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: #dfe300;
+}
+.list-inline i:hover {
+  color: black;
+}
+
+.btn-blue {
+  background-color: #dfe300;
+  color: #208c71;
+  padding: 20px 20px;
+  border-radius: 1px;
+}
+.btn-blue:hover {
+  background-color: orange;
+  color: #208c71;
+}
+
+/* Design adjustments using id (1% design remaining) */
+#introduction p {
+  margin-bottom: 40px;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
